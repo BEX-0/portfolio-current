@@ -1,0 +1,18 @@
+main section {
+ margin-bottom: 100px;
+}
+
+main section a {
+ color: white;
+ font-size: 20px;
+ background-color: var(--dark-gray);
+ padding: 5px 10px;
+ border: 3px inset var(--main-red);
+ border-radius: 7px;
+ margin: 10px;
+}
+
+main section a:hover {
+ color: var(--main-red);
+ border: 3px outset var(--main-red);
+}
