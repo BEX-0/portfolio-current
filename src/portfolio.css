@@ -1,3 +1,24 @@
+body {
+ text-align: center;
+}
+
+#first-row {
+ margin-top: 120px;
+}
+
+h2 {
+ margin-bottom: 15px;
+}
+
+img {
+ border: 5px double white;
+ width: 75%;
+}
+
+i:first-child {
+ font-size: 50px;
+}
+
 main section {
  margin-bottom: 100px;
 }
@@ -15,4 +36,9 @@ main section a {
 main section a:hover {
  color: var(--main-red);
  border: 3px outset var(--main-red);
+}
+
+p {
+ opacity: 0.7;
+ font-size: 18px;
 }
