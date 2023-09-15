@@ -7,29 +7,41 @@ body {
  background-color: black;
  color: white;
  font-family: "Ubuntu", sans-serif;
+ text-align: center;
 }
 
 a {
  text-decoration: none;
+ font-weight: 600;
+ color: var(--main-red);
  transition: 200ms all ease-in-out;
+}
+
+a:hover {
+ color: white;
+}
+
+.border-link {
+ color: white;
+ font-size: 20px;
+ font-weight: 300;
+ margin: 10px;
+ max-width: fit-content;
+ background-color: var(--dark-gray);
+ padding: 10px 15px;
+ border: 3px inset var(--main-red);
+ border-radius: 7px;
+}
+
+.border-link:hover {
+ color: var(--main-red);
+ border: 3px outset var(--main-red);
 }
 
 footer {
  margin-top: 200px;
- text-align: center;
  font-size: 15px;
  padding: 10px 0px;
-}
-
-footer a,
-.about-me-text a {
- color: var(--main-red);
- font-weight: 600;
-}
-
-footer a:hover,
-.about-me-text a:hover {
- color: white;
 }
 
 footer i {
@@ -47,51 +59,35 @@ footer section {
  font-size: 30px;
 }
 
-h1,
-h3 {
- margin: 0;
+h1 {
+ font-size: 100px;
+ font-weight: 300;
+ letter-spacing: 2px;
+ color: var(--main-red);
 }
 
-h1 {
- font-size: 80px;
- color: var(--main-red);
+h1,
+h2 {
+ font-family: "Josefin Sans", sans-serif;
 }
 
 h2 {
  color: var(--main-red);
- font-size: 40px;
+ font-size: 60px;
 }
 
 h3 {
  font-size: 40px;
  font-weight: 300;
- opacity: 0.7;
-}
-
-h3 strong {
- color: var(--main-red);
+ opacity: 0.8;
 }
 
 header {
- padding: 150px 0px;
-}
-
-header a {
- color: white;
- font-size: 20px;
- background-color: var(--dark-gray);
- padding: 5px 10px;
- border: 3px inset var(--main-red);
- border-radius: 7px;
-}
-
-header a:hover {
- color: var(--main-red);
- border: 3px outset var(--main-red);
+ padding: 100px 0px;
 }
 
 header section {
- margin-top: 20px;
+ margin-top: 40px;
 }
 
 i {
@@ -101,23 +97,18 @@ i {
 
 img {
  border-radius: 5px;
- margin-bottom: 15px;
+ margin-bottom: 20px;
+ border: 5px double white;
+ width: 75%;
 }
 
 .logo {
  font-size: 30px;
- font-weight: 800;
- font-family: "Edu SA Beginner", cursive;
+ font-weight: 200;
  color: var(--main-red);
  margin: 0px 40px;
  padding: 0px 10px;
- border: 3px double var(--main-red);
- border-radius: 10px;
-}
-
-.navbar-brand {
- color: var(--main-red);
- margin-left: 20px;
+ border: 3px inset var(--main-red);
 }
 
 nav {
@@ -130,8 +121,6 @@ nav {
 }
 
 nav ul {
- list-style: none;
- padding: 0px;
  margin: 0px;
 }
 
@@ -155,15 +144,12 @@ p {
  line-height: 1.3;
 }
 
-.col-md-6 ul {
+ul {
  list-style: none;
  padding-inline-start: 0px;
 }
 
 @media (max-width: 576px) {
- body {
-  text-align: center;
- }
  .header {
   padding-top: 50px;
  }
