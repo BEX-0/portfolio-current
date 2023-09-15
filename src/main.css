@@ -12,7 +12,6 @@ body {
 
 a {
  text-decoration: none;
- font-weight: 600;
  color: var(--main-red);
  transition: 200ms all ease-in-out;
 }
@@ -24,7 +23,7 @@ a:hover {
 .border-link {
  color: white;
  font-size: 20px;
- font-weight: 300;
+ font-weight: 400;
  margin: 10px;
  max-width: fit-content;
  background-color: var(--dark-gray);
@@ -40,8 +39,9 @@ a:hover {
 
 footer {
  margin-top: 200px;
- font-size: 15px;
- padding: 10px 0px;
+ padding-bottom: 10px;
+ background-color: #1c1e1f;
+ border-top: 1px solid #383d3f;
 }
 
 footer i {
@@ -61,7 +61,7 @@ footer section {
 
 h1 {
  font-size: 100px;
- font-weight: 300;
+
  letter-spacing: 2px;
  color: var(--main-red);
 }
@@ -69,6 +69,7 @@ h1 {
 h1,
 h2 {
  font-family: "Josefin Sans", sans-serif;
+ font-weight: 400;
 }
 
 h2 {
@@ -106,7 +107,7 @@ img {
  font-size: 30px;
  font-weight: 200;
  color: var(--main-red);
- margin: 0px 40px;
+ margin: 0px 20px;
  padding: 0px 10px;
  border: 3px inset var(--main-red);
 }
@@ -127,6 +128,7 @@ nav ul {
 nav li {
  display: inline;
  margin: 10px;
+ font-size: 20px;
 }
 
 nav a {
