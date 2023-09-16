@@ -104,7 +104,6 @@ img {
  border-radius: 5px;
  margin-bottom: 20px;
  border: 5px double white;
- width: 75%;
 }
 
 .logo {
@@ -173,8 +172,8 @@ ul {
   justify-content: center;
  }
 
- .col section {
-  margin-bottom: 50px;
+ .col-md-6 section {
+  margin-bottom: 60px;
  }
 
  header {
