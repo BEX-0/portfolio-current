@@ -224,8 +224,7 @@ ul {
  }
 
  nav li {
-  font-size: 15px;
-  margin: 5px;
+  display: list-item;
  }
 
  .text-left,
