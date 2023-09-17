@@ -1,10 +1,11 @@
 :root {
- --main-red: #bb0303;
+ --primary: #95b8d1;
+ --secondary: #669bbc;
  --dark-gray: rgb(255, 255, 255, 0.1);
 }
 
 body {
- background-color: black;
+ background-color: #1b1e1f;
  color: white;
  font-family: "Ubuntu", sans-serif;
  text-align: center;
@@ -12,7 +13,7 @@ body {
 
 a {
  text-decoration: none;
- color: var(--main-red);
+ color: var(--secondary);
  transition: 200ms all ease-in-out;
 }
 
@@ -27,25 +28,24 @@ a:hover {
  margin: 10px;
  background-color: var(--dark-gray);
  padding: 10px 15px;
- border: 3px inset var(--main-red);
+ border: 3px inset var(--secondary);
  border-radius: 7px;
 }
 
 .border-link:hover {
- color: var(--main-red);
- border: 3px outset var(--main-red);
+ color: var(--secondary);
+ border: 3px outset var(--secondary);
 }
 
 footer {
  margin-top: 200px;
  padding-bottom: 10px;
- background-color: #1c1e1f;
  border-top: 1px solid #383d3f;
 }
 
 footer i {
  padding: 10px;
- border: 1px solid var(--main-red);
+ border: 1px solid var(--primary);
  border-radius: 40px;
  margin: 10px;
 }
@@ -61,26 +61,25 @@ footer section {
 
 h1 {
  font-size: 100px;
-
  letter-spacing: 2px;
- color: var(--main-red);
 }
 
 h1,
 h2 {
  font-family: "Josefin Sans", sans-serif;
- font-weight: 400;
+ font-weight: 300;
+ color: var(--primary);
 }
 
 h2 {
- color: var(--main-red);
+ color: var(--primary);
  font-size: 60px;
 }
 
 h3 {
  font-size: 40px;
  font-weight: 300;
- opacity: 0.8;
+ color: lightgray;
 }
 
 header {
@@ -96,7 +95,7 @@ hr {
 }
 
 i {
- color: var(--main-red);
+ color: var(--secondary);
  transition: 200ms all ease-in-out;
 }
 
@@ -109,10 +108,15 @@ img {
 .logo {
  font-size: 30px;
  font-weight: 200;
- color: var(--main-red);
+ color: var(--primary);
  margin: 0px 20px;
  padding: 0px 10px;
- border: 3px inset var(--main-red);
+ border: 3px inset var(--primary);
+ transition: 300ms all ease-in-out;
+}
+
+.logo:hover {
+ border: 3px inset var(--primary);
 }
 
 .mobile-format-only {
@@ -120,12 +124,16 @@ img {
 }
 
 nav {
- background-color: #1c1e1f;
  margin: 0px;
  padding: 10px;
  line-height: 50px;
  justify-content: space-between;
  border-bottom: 1px solid #383d3f;
+}
+
+nav,
+footer {
+ background-color: #181a1b;
 }
 
 .navbar-toggler {
@@ -148,7 +156,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
- color: var(--main-red);
+ color: var(--primary);
 }
 
 p {
@@ -170,10 +178,9 @@ ul {
  padding-inline-start: 0px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
  .border-link {
-  display: flex;
-  justify-content: center;
+  font-size: 25px;
  }
 
  .col-md-6 {
@@ -229,5 +236,12 @@ ul {
  .text-right li {
   display: inline-flex;
   margin: 5px;
+ }
+}
+
+@media (max-width: 576px) {
+ .border-link {
+  display: flex;
+  justify-content: center;
  }
 }

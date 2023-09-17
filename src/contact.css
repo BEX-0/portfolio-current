@@ -8,7 +8,7 @@ body {
 }
 
 a:hover {
- color: var(--main-red);
+ color: var(--primary);
 }
 
 h1 {
