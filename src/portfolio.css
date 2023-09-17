@@ -25,10 +25,6 @@ p {
 }
 
 @media (max-width: 950px) {
- .col-md-6 {
-  width: 100%;
- }
-
  #first-row {
   margin-top: 40px;
  }
