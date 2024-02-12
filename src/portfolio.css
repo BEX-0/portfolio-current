@@ -1,5 +1,33 @@
-#first-row {
- margin-top: 120px;
+.border-link {
+ font-size: 1rem;
+ display: inline-block;
+}
+
+.project {
+ background-color: rgba(0, 0, 0, 0.5);
+ width: 100%;
+ margin: 1rem auto;
+ height: fit-content;
+ padding: 1rem;
+ border-radius: 8px;
+}
+
+.description {
+ text-align: left;
+}
+
+img {
+ max-width: 100%;
+ height: auto;
+ vertical-align: middle;
+ overflow-clip-margin: border-box;
+ overflow: clip;
+ border: none;
+}
+
+figure {
+ display: block;
+ margin: auto;
 }
 
 h1 {
@@ -8,7 +36,7 @@ h1 {
 
 h2 {
  margin-bottom: 15px;
- font-size: 40px;
+ font-size: 45px;
  color: lightgray;
 }
 
@@ -16,16 +44,26 @@ h3 {
  font-size: 30px;
 }
 
-main section {
- margin-bottom: 100px;
-}
-
 p {
  opacity: 0.7;
  font-size: 18px;
 }
 
+@media (max-width: 1200px) {
+ .border-link {
+  display: block;
+ }
+}
+
 @media (max-width: 950px) {
+ .container {
+  padding: 0 10px;
+ }
+
+ .border-link {
+  font-size: 1.3rem;
+ }
+
  #first-row {
   margin-top: 40px;
  }
@@ -35,10 +73,20 @@ p {
  }
 
  h2 {
-  font-size: 40px;
+  font-size: 25px;
  }
 
  h3 {
   font-size: 20px;
+ }
+
+ p {
+  font-size: 15px;
+ }
+}
+
+@media (max-width: 850px) {
+ h2 {
+  font-size: 30px;
  }
 }
