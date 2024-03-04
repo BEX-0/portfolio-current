@@ -2,7 +2,7 @@
  --primary: #a3d8df;
  --secondary: #ab8d91;
  --light-grey: #8d99ae;
- --dark-gray: rgb(255, 255, 255, 0.05);
+ --light-black: rgb(0, 0, 0, 0.05);
 }
 
 body {
@@ -67,6 +67,7 @@ h1 {
 
 h3 {
  font-size: 60px;
+ font-weight: 300;
 }
 
 h2 {
@@ -160,8 +161,10 @@ ul {
  padding-inline-start: 0px;
 }
 
-.white {
- color: white;
+@media (max-width: 990px) {
+ nav ul {
+  text-align: center;
+ }
 }
 
 @media (max-width: 950px) {

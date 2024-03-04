@@ -74,7 +74,7 @@ const projects = [
 projects.forEach((project) => {
  projectsElement.innerHTML += ` <section class="row project">
         <div class="col-md-6 description">
-            <h2>${project.title}</h2>
+            <h3>${project.title}</h3>
             <p>${project.description}</p>
             <a href="${project["project-link"]}" class="border-link ms-0">Launch Project</a>
             <a href="${project["source-code"]}" class="border-link">Source Code</a>
