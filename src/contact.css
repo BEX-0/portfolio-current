@@ -16,8 +16,9 @@ h1 {
  margin: 50px 0px;
 }
 
-h3 {
+h2 {
  font-size: 30px;
+ color: var(--primary);
 }
 
 i {
